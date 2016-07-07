@@ -13,5 +13,6 @@ const loadConfig = (name) => {
 module.exports = {
     configs: {
         common: loadConfig('common'),
+        'common-es6': loadConfig('common-es6'),
     },
 };
