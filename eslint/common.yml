@@ -5,6 +5,9 @@ env:
     node: true
     mocha: true
 
+plugins:
+    - 'mocha'
+
 parserOptions:
     # Allow ES6.
     ecmaVersion: 6
@@ -153,3 +156,8 @@ rules:
 
     # Consistency.
     quotes: ["error", "single", { "avoidEscape": true, "allowTemplateLiterals": true }]
+
+    # Mocha.
+    "mocha/handle-done-callback": "error"
+    "mocha/no-global-tests": "error"
+    "mocha/no-mocha-global-arrows": "error"
