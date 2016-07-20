@@ -145,6 +145,8 @@ rules:
     # ES6.
     prefer-const: "warn"
     require-yield: "error"
+    no-useless-constructor: "error"
+    no-useless-rename: "error"
 
     # ES6 arrow functions.
     arrow-spacing: "error"
