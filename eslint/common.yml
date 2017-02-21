@@ -1,5 +1,5 @@
 extends:
-    "./eslint/common-es5.yml"
+  "./eslint/common-es5.yml"
 
 rules:
-    no-var: "error"
+  no-var: "error"
