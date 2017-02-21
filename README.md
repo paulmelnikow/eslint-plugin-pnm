@@ -1,39 +1,45 @@
-eslint-plugin-bodylabs
-======================
+eslint-plugin-pnm
+=================
 
-Body Labs JavaScript style, using eslint.
+Paul's JavaScript style, using eslint.
+
+Originally developed at [Body Labs][]. Derived from Crockford style, with a
+bunch of tweaks.
 
 This is provided as an eslint module, because it lets us bundle together
 multiple configs, and also allows us to provide code for our own rules,
 should we add any in the future.
 
 
+[Body Labs]: https://github.com/bodylabs/eslint-plugin-bodylabs
+
+
 Usage
 -----
 
 ```sh
-npm install --save-dev eslint eslint-plugin-bodylabs
+npm install --save-dev eslint eslint-plugin-pnm
 ```
 
 In your project, create `.eslintrc.yml`:
 
 ```yml
 extends:
-    "plugin:bodylabs/common"
+  "plugin:pnm/common"
 ```
 
-Or for ES6:
+Or for ES5:
 
 ```yml
 extends:
-    "plugin:bodylabs/common-es6"
+  "plugin:pnm/common-es5"
 ```
 
 And then set up scripts:
 
 ```json
 "scripts": {
-  "lint": "eslint src",
+  "lint": "eslint '**/*.js'",
   "unittest": "mocha src",
   "test": "npm run lint && npm run unittest"
 }

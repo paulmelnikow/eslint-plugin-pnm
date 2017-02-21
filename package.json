@@ -1,14 +1,14 @@
 {
-  "name": "eslint-plugin-bodylabs",
-  "version": "8.0.0",
-  "description": "Body Labs JavaScript style",
+  "name": "eslint-plugin-pnm",
+  "version": "1.0.0",
+  "description": "Paul's JavaScript style",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bodylabs/eslint-plugin-bodylabs.git"
+    "url": "https://github.com/paulmelnikow/eslint-plugin-pnm.git"
   },
-  "author": "Body Labs",
+  "author": "Paul Melnikow",
   "license": "MIT",
-  "homepage": "https://github.com/bodylabs/eslint-plugin-bodylabs",
+  "homepage": "https://github.com/paulmelnikow/eslint-plugin-pnm",
   "peerDependencies": {
     "eslint": ">=2.13.0"
   },

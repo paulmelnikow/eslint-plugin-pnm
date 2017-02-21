@@ -1,5 +1,0 @@
-extends:
-    "./eslint/common.yml"
-
-rules:
-    no-var: "error"
