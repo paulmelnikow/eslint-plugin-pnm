@@ -15,5 +15,8 @@
   "dependencies": {
     "eslint-plugin-mocha": "^4.1.0",
     "js-yaml": ">=3"
+  },
+  "devDependencies": {
+    "eslint": "^3.16.1"
   }
 }
