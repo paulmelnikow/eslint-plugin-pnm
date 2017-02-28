@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-pnm",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Paul's JavaScript style",
   "repository": {
     "type": "git",
