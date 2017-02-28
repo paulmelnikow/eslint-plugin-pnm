@@ -117,8 +117,26 @@ rules:
   space-unary-ops: ["error", { "words": true, "nonwords": false, "overrides": { "!": true } }]
   space-infix-ops: "error"
 
-  # Automatic semicolon insertion is pretty bad.
-  semi: "error"
+  # Place semicolons at the beginning of lines, only where they're needed, and
+  # catch errors with the linter. Automatic semicolon insertion is bad, but it
+  # can't be turned off. which means manual semicolon placement is mostly
+  # placebo: it doesn't insulate you from ASI. There are obscure cases that
+  # manual semicolons fix, e.g. an array literal at the beginning of a line.
+  # There are others that manual semicolons do not, e.g. a newline between a
+  # return keyword and its value. It's basically of a wash. Since semicolons
+  # are expensive -- a whole character for every line of code! -- it's a clear
+  # loss.
+  # Further reading:
+  # - https://www.youtube.com/watch?v=Qlr-FGbhKaI
+  # - http://blog.izs.me/post/2353458699/an-open-letter-to-javascript-leaders-regarding
+  semi: ["error", "never"]
+  # Prevent newline after return.
+  no-unreachable: "error"
+  # In the rare cases where semis are needed in multiline statements, require them,
+  # and place them at the beginning of the line.
+  # foo()
+  # ;[1, 2, 3].forEach(a => { console.log(a) })
+  no-unexpected-multiline: "error"
 
   # Creating a function in a loop is a big gotcha.
   no-loop-func: "error"
