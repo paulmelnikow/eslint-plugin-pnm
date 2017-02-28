@@ -3,3 +3,13 @@ extends:
 
 rules:
   no-var: "error"
+
+  # Prefer arrow functions over function keyword.
+  # const foo = (arg1, arg2) => {
+  #     stuff(arg1);
+  # };
+  # const factorial = (value) => {
+  #   return value == 0 ? 1 : value * factorial(value - 1);
+  # };
+  # This rule doesn't enforce it everywhere, but it's a start.
+  prefer-arrow-callback: "error"
