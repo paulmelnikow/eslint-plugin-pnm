@@ -190,6 +190,8 @@ rules:
   # Spaces before and after arrow, e.g. a => a
   arrow-spacing: "error"
 
+  no-useless-escape: "error"
+
   # Disable a couple of the recommended checks:
 
   # Allow unused parameters. In callbacks, removing them seems to obscure
